@@ -1,0 +1,746 @@
+{
+  "annotations": {
+    "list": [
+      {
+        "builtIn": 1,
+        "datasource": "-- Grafana --",
+        "enable": true,
+        "hide": true,
+        "iconColor": "rgba(0, 211, 255, 1)",
+        "name": "Annotations & Alerts",
+        "type": "dashboard"
+      }
+    ]
+  },
+  "editable": true,
+  "gnetId": null,
+  "graphTooltip": 0,
+  "id": 1,
+  "links": [],
+  "panels": [
+    {
+      "aliasColors": {},
+      "bars": false,
+      "dashLength": 10,
+      "dashes": false,
+      "datasource": null,
+      "fieldConfig": {
+        "defaults": {
+          "custom": {}
+        },
+        "overrides": []
+      },
+      "fill": 1,
+      "fillGradient": 0,
+      "gridPos": {
+        "h": 8,
+        "w": 12,
+        "x": 0,
+        "y": 0
+      },
+      "hiddenSeries": false,
+      "id": 18,
+      "legend": {
+        "avg": true,
+        "current": true,
+        "max": true,
+        "min": true,
+        "rightSide": false,
+        "show": true,
+        "total": false,
+        "values": true
+      },
+      "lines": true,
+      "linewidth": 1,
+      "links": [
+        {
+          "title": "Topo",
+          "url": "http://localhost:8080/d/b1hq8EBGk/flowcharting?orgId=1&refresh=5s&from=1611319326132&to=1611319626132"
+        }
+      ],
+      "nullPointMode": "null",
+      "options": {
+        "alertThreshold": true
+      },
+      "percentage": false,
+      "pluginVersion": "7.3.7",
+      "pointradius": 2,
+      "points": false,
+      "renderer": "flot",
+      "seriesOverrides": [],
+      "spaceLength": 10,
+      "stack": false,
+      "steppedLine": false,
+      "targets": [
+        {
+          "format": "time_series",
+          "group": [
+            {
+              "params": [
+                "1s",
+                "none"
+              ],
+              "type": "time"
+            }
+          ],
+          "metricColumn": "none",
+          "rawQuery": false,
+          "rawSql": "SELECT\n  $__timeGroupAlias(date_time_date,1s),\n  maxdelay AS \"最大时延\"\nFROM totaldata\nWHERE\n  $__timeFilter(date_time_date)\nGROUP BY 1\nORDER BY $__timeGroup(date_time_date,1s)",
+          "refId": "A",
+          "select": [
+            [
+              {
+                "params": [
+                  "maxdelay"
+                ],
+                "type": "column"
+              },
+              {
+                "params": [
+                  "最大时延"
+                ],
+                "type": "alias"
+              }
+            ]
+          ],
+          "table": "totaldata",
+          "timeColumn": "date_time_date",
+          "timeColumnType": "timestamp",
+          "where": [
+            {
+              "name": "$__timeFilter",
+              "params": [],
+              "type": "macro"
+            }
+          ]
+        }
+      ],
+      "thresholds": [],
+      "timeFrom": null,
+      "timeRegions": [],
+      "timeShift": null,
+      "title": "最大时延",
+      "tooltip": {
+        "shared": true,
+        "sort": 0,
+        "value_type": "individual"
+      },
+      "type": "graph",
+      "xaxis": {
+        "buckets": null,
+        "mode": "time",
+        "name": null,
+        "show": true,
+        "values": []
+      },
+      "yaxes": [
+        {
+          "$$hashKey": "object:1145",
+          "format": "ms",
+          "label": null,
+          "logBase": 1,
+          "max": null,
+          "min": null,
+          "show": true
+        },
+        {
+          "$$hashKey": "object:1146",
+          "format": "short",
+          "label": null,
+          "logBase": 1,
+          "max": null,
+          "min": null,
+          "show": true
+        }
+      ],
+      "yaxis": {
+        "align": false,
+        "alignLevel": null
+      }
+    },
+    {
+      "datasource": null,
+      "description": "",
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "thresholds"
+          },
+          "custom": {},
+          "mappings": [
+            {
+              "from": "",
+              "id": 1,
+              "text": "",
+              "to": "",
+              "type": 1
+            }
+          ],
+          "thresholds": {
+            "mode": "percentage",
+            "steps": [
+              {
+                "color": "dark-green",
+                "value": null
+              },
+              {
+                "color": "light-green",
+                "value": 20
+              },
+              {
+                "color": "light-yellow",
+                "value": 40
+              },
+              {
+                "color": "dark-yellow",
+                "value": 60
+              },
+              {
+                "color": "light-red",
+                "value": 80
+              },
+              {
+                "color": "dark-red",
+                "value": 90
+              }
+            ]
+          },
+          "unit": "percentunit"
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 8,
+        "w": 6,
+        "x": 12,
+        "y": 0
+      },
+      "id": 4,
+      "links": [
+        {
+          "title": "Topo",
+          "url": "http://localhost:8080/d/b1hq8EBGk/topo?orgId=1&refresh=5s&from=now-5m&to=now"
+        }
+      ],
+      "options": {
+        "colorMode": "value",
+        "graphMode": "area",
+        "justifyMode": "auto",
+        "orientation": "auto",
+        "reduceOptions": {
+          "calcs": [
+            "lastNotNull"
+          ],
+          "fields": "",
+          "values": false
+        },
+        "textMode": "auto"
+      },
+      "pluginVersion": "7.3.7",
+      "targets": [
+        {
+          "format": "time_series",
+          "group": [
+            {
+              "params": [
+                "1s",
+                "none"
+              ],
+              "type": "time"
+            }
+          ],
+          "metricColumn": "none",
+          "rawQuery": false,
+          "rawSql": "SELECT\n  $__timeGroupAlias(date_time_date,1s),\n  meanloss AS \"平均丢包率\"\nFROM totaldata\nWHERE\n  $__timeFilter(date_time_date)\nGROUP BY 1\nORDER BY $__timeGroup(date_time_date,1s)",
+          "refId": "A",
+          "select": [
+            [
+              {
+                "params": [
+                  "meanloss"
+                ],
+                "type": "column"
+              },
+              {
+                "params": [
+                  "平均丢包率"
+                ],
+                "type": "alias"
+              }
+            ]
+          ],
+          "table": "totaldata",
+          "timeColumn": "date_time_date",
+          "timeColumnType": "timestamp",
+          "where": [
+            {
+              "name": "$__timeFilter",
+              "params": [],
+              "type": "macro"
+            }
+          ]
+        },
+        {
+          "format": "time_series",
+          "group": [
+            {
+              "params": [
+                "1s",
+                "none"
+              ],
+              "type": "time"
+            }
+          ],
+          "metricColumn": "none",
+          "rawQuery": false,
+          "rawSql": "SELECT\n  $__timeGroupAlias(date_time_date,1s),\n  maxloss AS \"最大丢包率\"\nFROM totaldata\nWHERE\n  $__timeFilter(date_time_date)\nGROUP BY 1\nORDER BY $__timeGroup(date_time_date,1s)",
+          "refId": "B",
+          "select": [
+            [
+              {
+                "params": [
+                  "maxloss"
+                ],
+                "type": "column"
+              },
+              {
+                "params": [
+                  "最大丢包率"
+                ],
+                "type": "alias"
+              }
+            ]
+          ],
+          "table": "totaldata",
+          "timeColumn": "date_time_date",
+          "timeColumnType": "timestamp",
+          "where": [
+            {
+              "name": "$__timeFilter",
+              "params": [],
+              "type": "macro"
+            }
+          ]
+        }
+      ],
+      "timeFrom": null,
+      "timeShift": null,
+      "title": "丢包率1",
+      "type": "stat"
+    },
+    {
+      "datasource": null,
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "thresholds"
+          },
+          "custom": {},
+          "mappings": [],
+          "thresholds": {
+            "mode": "percentage",
+            "steps": [
+              {
+                "color": "dark-green",
+                "value": null
+              },
+              {
+                "color": "light-green",
+                "value": 20
+              },
+              {
+                "color": "light-yellow",
+                "value": 40
+              },
+              {
+                "color": "dark-yellow",
+                "value": 60
+              },
+              {
+                "color": "light-red",
+                "value": 80
+              },
+              {
+                "color": "dark-red",
+                "value": 90
+              }
+            ]
+          },
+          "unit": "percentunit"
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 8,
+        "w": 6,
+        "x": 18,
+        "y": 0
+      },
+      "id": 14,
+      "links": [
+        {
+          "title": "Topo",
+          "url": "http://localhost:8080/d/b1hq8EBGk/topo?orgId=1&refresh=5s&from=now-5m&to=now"
+        }
+      ],
+      "options": {
+        "reduceOptions": {
+          "calcs": [
+            "lastNotNull"
+          ],
+          "fields": "",
+          "values": false
+        },
+        "showThresholdLabels": false,
+        "showThresholdMarkers": true
+      },
+      "pluginVersion": "7.3.7",
+      "targets": [
+        {
+          "format": "time_series",
+          "group": [
+            {
+              "params": [
+                "1s",
+                "none"
+              ],
+              "type": "time"
+            }
+          ],
+          "metricColumn": "none",
+          "rawQuery": false,
+          "rawSql": "SELECT\n  $__timeGroupAlias(date_time_date,1s),\n  meanloss AS \"平均丢包率\"\nFROM totaldata\nWHERE\n  $__timeFilter(date_time_date)\nGROUP BY 1\nORDER BY $__timeGroup(date_time_date,1s)",
+          "refId": "A",
+          "select": [
+            [
+              {
+                "params": [
+                  "meanloss"
+                ],
+                "type": "column"
+              },
+              {
+                "params": [
+                  "平均丢包率"
+                ],
+                "type": "alias"
+              }
+            ]
+          ],
+          "table": "totaldata",
+          "timeColumn": "date_time_date",
+          "timeColumnType": "timestamp",
+          "where": [
+            {
+              "name": "$__timeFilter",
+              "params": [],
+              "type": "macro"
+            }
+          ]
+        },
+        {
+          "format": "time_series",
+          "group": [
+            {
+              "params": [
+                "1s",
+                "none"
+              ],
+              "type": "time"
+            }
+          ],
+          "metricColumn": "none",
+          "rawQuery": false,
+          "rawSql": "SELECT\n  $__timeGroupAlias(date_time_date,1s),\n  maxloss AS \"最大丢包率\"\nFROM totaldata\nWHERE\n  $__timeFilter(date_time_date)\nGROUP BY 1\nORDER BY $__timeGroup(date_time_date,1s)",
+          "refId": "B",
+          "select": [
+            [
+              {
+                "params": [
+                  "maxloss"
+                ],
+                "type": "column"
+              },
+              {
+                "params": [
+                  "最大丢包率"
+                ],
+                "type": "alias"
+              }
+            ]
+          ],
+          "table": "totaldata",
+          "timeColumn": "date_time_date",
+          "timeColumnType": "timestamp",
+          "where": [
+            {
+              "name": "$__timeFilter",
+              "params": [],
+              "type": "macro"
+            }
+          ]
+        }
+      ],
+      "timeFrom": null,
+      "timeShift": null,
+      "title": "丢包率2",
+      "type": "gauge"
+    },
+    {
+      "aliasColors": {},
+      "bars": false,
+      "dashLength": 10,
+      "dashes": false,
+      "datasource": null,
+      "decimals": null,
+      "fieldConfig": {
+        "defaults": {
+          "custom": {}
+        },
+        "overrides": []
+      },
+      "fill": 1,
+      "fillGradient": 0,
+      "gridPos": {
+        "h": 9,
+        "w": 12,
+        "x": 0,
+        "y": 8
+      },
+      "hiddenSeries": false,
+      "id": 16,
+      "legend": {
+        "alignAsTable": false,
+        "avg": true,
+        "current": true,
+        "hideEmpty": false,
+        "hideZero": false,
+        "max": true,
+        "min": true,
+        "rightSide": false,
+        "show": true,
+        "total": false,
+        "values": true
+      },
+      "lines": true,
+      "linewidth": 1,
+      "links": [
+        {
+          "title": "Topo",
+          "url": "http://localhost:8080/d/b1hq8EBGk/topo?orgId=1&refresh=5s&from=now-5m&to=now"
+        }
+      ],
+      "nullPointMode": "null",
+      "options": {
+        "alertThreshold": true
+      },
+      "percentage": false,
+      "pluginVersion": "7.3.7",
+      "pointradius": 2,
+      "points": false,
+      "renderer": "flot",
+      "seriesOverrides": [],
+      "spaceLength": 10,
+      "stack": false,
+      "steppedLine": false,
+      "targets": [
+        {
+          "format": "time_series",
+          "group": [
+            {
+              "params": [
+                "1s",
+                "none"
+              ],
+              "type": "time"
+            }
+          ],
+          "metricColumn": "none",
+          "rawQuery": false,
+          "rawSql": "SELECT\n  $__timeGroupAlias(date_time_date,1s),\n  avg(meandelay) AS \"平均时延\"\nFROM totaldata\nWHERE\n  $__timeFilter(date_time_date)\nGROUP BY 1\nORDER BY $__timeGroup(date_time_date,1s)",
+          "refId": "A",
+          "select": [
+            [
+              {
+                "params": [
+                  "meandelay"
+                ],
+                "type": "column"
+              },
+              {
+                "params": [
+                  "avg"
+                ],
+                "type": "aggregate"
+              },
+              {
+                "params": [
+                  "平均时延"
+                ],
+                "type": "alias"
+              }
+            ]
+          ],
+          "table": "totaldata",
+          "timeColumn": "date_time_date",
+          "timeColumnType": "timestamp",
+          "where": [
+            {
+              "name": "$__timeFilter",
+              "params": [],
+              "type": "macro"
+            }
+          ]
+        }
+      ],
+      "thresholds": [],
+      "timeFrom": null,
+      "timeRegions": [
+        {
+          "$$hashKey": "object:952",
+          "colorMode": "background6",
+          "fill": true,
+          "fillColor": "rgba(234, 112, 112, 0.12)",
+          "line": false,
+          "lineColor": "rgba(237, 46, 24, 0.60)",
+          "op": "time"
+        }
+      ],
+      "timeShift": null,
+      "title": "平均时延",
+      "tooltip": {
+        "shared": true,
+        "sort": 0,
+        "value_type": "individual"
+      },
+      "type": "graph",
+      "xaxis": {
+        "buckets": null,
+        "mode": "time",
+        "name": null,
+        "show": true,
+        "values": []
+      },
+      "yaxes": [
+        {
+          "$$hashKey": "object:819",
+          "decimals": null,
+          "format": "none",
+          "label": "",
+          "logBase": 1,
+          "max": null,
+          "min": null,
+          "show": true
+        },
+        {
+          "$$hashKey": "object:820",
+          "format": "short",
+          "label": null,
+          "logBase": 1,
+          "max": null,
+          "min": null,
+          "show": false
+        }
+      ],
+      "yaxis": {
+        "align": false,
+        "alignLevel": null
+      }
+    },
+    {
+      "datasource": "Infinity",
+      "description": "",
+      "fieldConfig": {
+        "defaults": {
+          "custom": {},
+          "mappings": [],
+          "thresholds": {
+            "mode": "percentage",
+            "steps": [
+              {
+                "color": "green",
+                "value": null
+              },
+              {
+                "color": "red",
+                "value": 80
+              }
+            ]
+          },
+          "unit": "percentunit"
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 9,
+        "w": 12,
+        "x": 12,
+        "y": 8
+      },
+      "id": 10,
+      "links": [
+        {
+          "title": "Topo",
+          "url": "http://localhost:8080/d/b1hq8EBGk/topo?orgId=1&refresh=5s&from=now-5m&to=now"
+        }
+      ],
+      "options": {
+        "orientation": "auto",
+        "reduceOptions": {
+          "calcs": [
+            "lastNotNull"
+          ],
+          "fields": "/^res$/",
+          "values": false
+        },
+        "showThresholdLabels": false,
+        "showThresholdMarkers": true
+      },
+      "pluginVersion": "7.3.7",
+      "targets": [
+        {
+          "columns": [
+            {
+              "selector": "res",
+              "text": "res",
+              "type": "number"
+            }
+          ],
+          "data": "",
+          "format": "table",
+          "global_query_id": "",
+          "query_mode": "standard",
+          "refId": "A",
+          "root_selector": "",
+          "source": "url",
+          "type": "json",
+          "url": "http://192.168.1.104:10086/maxrate",
+          "url_options": {
+            "data": "",
+            "method": "GET"
+          }
+        }
+      ],
+      "timeFrom": null,
+      "timeShift": null,
+      "title": "最大链路利用率1",
+      "type": "gauge"
+    }
+  ],
+  "refresh": "5s",
+  "schemaVersion": 26,
+  "style": "dark",
+  "tags": [],
+  "templating": {
+    "list": []
+  },
+  "time": {
+    "from": "now-5m",
+    "to": "now"
+  },
+  "timepicker": {},
+  "timezone": "",
+  "title": "Statistical-data",
+  "uid": "TVjPkoBGz",
+  "version": 17
+}
