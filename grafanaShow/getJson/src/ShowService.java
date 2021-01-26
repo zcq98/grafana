@@ -23,9 +23,8 @@ public class ShowService {
             + "mindelay double not null,"
             + "maxdelay double not null,"
             + "meandelay double not null,"
-            + "srcIP varchar(20) not null,"
-            + "dstIP varchar(20) not null,"
-            + "refd double not null,"
+            + "maxloss double not null,"
+            + "meanloss double not null,"
             + "date_time_date timestamp not null"
             + ")charset=utf8;";
     static String deletetotaldata = "TRUNCATE TABLE totaldata";

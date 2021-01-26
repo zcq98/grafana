@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7266dbf8-e8ec-4a43-a0c1-07adcceb7a8c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../Statistical-data.json" beforeDir="false" afterPath="$PROJECT_DIR$/../Statistical-data.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/getJson/src/ShowService.java" beforeDir="false" afterPath="$PROJECT_DIR$/getJson/src/ShowService.java" afterDir="false" />
     </list>
@@ -33,7 +32,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../Project/tools" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/grafana-master/grafana-master/grafanaShow" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
