@@ -139,7 +139,7 @@
       "timeFrom": null,
       "timeRegions": [],
       "timeShift": null,
-      "title": "最大时延",
+      "title": "MaxDelay",
       "tooltip": {
         "shared": true,
         "sort": 0,
@@ -365,7 +365,7 @@
       ],
       "timeFrom": null,
       "timeShift": null,
-      "title": "丢包率1",
+      "title": "Packet Loss Rate - Time series",
       "type": "stat"
     },
     {
@@ -543,7 +543,7 @@
       ],
       "timeFrom": null,
       "timeShift": null,
-      "title": "丢包率2",
+      "title": "Packet Loss Rate - Current",
       "type": "gauge"
     },
     {
@@ -687,7 +687,7 @@
         }
       ],
       "timeShift": null,
-      "title": "平均时延",
+      "title": "MeanDelay",
       "tooltip": {
         "shared": true,
         "sort": 0,
@@ -823,7 +823,7 @@
       ],
       "timeFrom": null,
       "timeShift": null,
-      "title": "最大链路利用率1",
+      "title": "Maximum Link Utilization",
       "type": "gauge"
     }
   ],
@@ -842,5 +842,5 @@
   "timezone": "",
   "title": "Statistical-data",
   "uid": "TVjPkoBGz",
-  "version": 8
+  "version": 9
 }
