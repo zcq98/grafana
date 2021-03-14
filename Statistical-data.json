@@ -54,10 +54,6 @@
       "linewidth": 1,
       "links": [
         {
-          "title": "Topo",
-          "url": "http://localhost:8080/d/b1hq8EBGk/flowcharting?orgId=1&refresh=5s&from=1611319326132&to=1611319626132"
-        },
-        {
           "title": "Topo-region1",
           "url": "http://localhost:8080/d/b2hq8EBGk/topo-region1?orgId=1&refresh=5s"
         },
@@ -238,10 +234,6 @@
       "id": 4,
       "links": [
         {
-          "title": "Topo",
-          "url": "http://localhost:8080/d/b1hq8EBGk/topo?orgId=1&refresh=5s&from=now-5m&to=now"
-        },
-        {
           "title": "Topo-region1",
           "url": "http://localhost:8080/d/b2hq8EBGk/topo-region1?orgId=1&refresh=5s"
         },
@@ -419,10 +411,6 @@
       "id": 14,
       "links": [
         {
-          "title": "Topo",
-          "url": "http://localhost:8080/d/b1hq8EBGk/topo?orgId=1&refresh=5s&from=now-5m&to=now"
-        },
-        {
           "title": "Topo-region1",
           "url": "http://localhost:8080/d/b2hq8EBGk/topo-region1?orgId=1&refresh=5s"
         },
@@ -585,10 +573,6 @@
       "lines": true,
       "linewidth": 1,
       "links": [
-        {
-          "title": "Topo",
-          "url": "http://localhost:8080/d/b1hq8EBGk/topo?orgId=1&refresh=5s&from=now-5m&to=now"
-        },
         {
           "title": "Topo-region1",
           "url": "http://localhost:8080/d/b2hq8EBGk/topo-region1?orgId=1&refresh=5s"
@@ -760,10 +744,6 @@
       "id": 10,
       "links": [
         {
-          "title": "Topo",
-          "url": "http://localhost:8080/d/b1hq8EBGk/topo?orgId=1&refresh=5s&from=now-5m&to=now"
-        },
-        {
           "title": "Topo-region1",
           "url": "http://localhost:8080/d/b2hq8EBGk/topo-region1?orgId=1&refresh=5s"
         },
@@ -842,5 +822,5 @@
   "timezone": "",
   "title": "Statistical-data",
   "uid": "TVjPkoBGz",
-  "version": 9
+  "version": 10
 }
