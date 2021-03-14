@@ -89,7 +89,7 @@ public class ShowService {
                 System.out.println("更新时间:" + formatter.format(date));
                 Timestamp sqlTime = new Timestamp(date.getTime());
                 uploadTotalres(getShowConfig(), delayRefMap, sqlTime);
-                uploadTopores(ReqAPI.getTraffic(), ReqAPI.geteachdelay(), ReqAPI.geteachloss(), null/*ReqAPI.getlinkrate()*/, sqlTime);
+                uploadTopores(ReqAPI.getTraffic(), ReqAPI.geteachdelay(), ReqAPI.geteachloss(), ReqAPI.getlinkrate(), sqlTime);
             }
         }, 2000, 5000);
 
@@ -215,7 +215,7 @@ public class ShowService {
                 statement.executeUpdate();
             }
 
-/*            statement = con.prepareStatement(sqllinkrate);
+            statement = con.prepareStatement(sqllinkrate);
             hashMap = ReqAPI.handleData(linkrate);
             keySet = hashMap.keySet();
             for (String str : keySet) {
@@ -223,7 +223,7 @@ public class ShowService {
                 statement.setDouble(2, hashMap.get(str));
                 statement.setTimestamp(3, sqlTime);
                 statement.executeUpdate();
-            }*/
+            }
 
         } catch (ClassNotFoundException e) {
             //数据库驱动类异常处理

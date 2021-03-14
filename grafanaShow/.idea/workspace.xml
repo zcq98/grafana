@@ -2,7 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7266dbf8-e8ec-4a43-a0c1-07adcceb7a8c" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../Topo-region1.json" beforeDir="false" afterPath="$PROJECT_DIR$/../Topo-region1.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Topo-region2.json" beforeDir="false" afterPath="$PROJECT_DIR$/../Topo-region2.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Topo-region3.json" beforeDir="false" afterPath="$PROJECT_DIR$/../Topo-region3.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Topo-region4.json" beforeDir="false" afterPath="$PROJECT_DIR$/../Topo-region4.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Topo-region5.json" beforeDir="false" afterPath="$PROJECT_DIR$/../Topo-region5.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/getJson/src/ShowService.java" beforeDir="false" afterPath="$PROJECT_DIR$/getJson/src/ShowService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/getJson/ShowService$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/getJson/ShowService$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/getJson/ShowService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/getJson/ShowService.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,6 +28,13 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="hiddenUrls">
+      <set>
+        <option value="https://github.com/zcq98/grafana" />
+      </set>
+    </option>
+  </component>
   <component name="ProjectId" id="1nQKTTBAzhiYVEhctl8Gb5Tg4eo" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -31,7 +46,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/grafana-master/grafana-master/grafanaShow" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
