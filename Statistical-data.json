@@ -794,7 +794,7 @@
           "root_selector": "",
           "source": "url",
           "type": "json",
-          "url": "http://192.168.1.104:10086/maxrate",
+          "url": "http://localhost:10086/maxrate",
           "url_options": {
             "data": "",
             "method": "GET"
@@ -822,5 +822,5 @@
   "timezone": "",
   "title": "Statistical-data",
   "uid": "TVjPkoBGz",
-  "version": 10
+  "version": 11
 }
